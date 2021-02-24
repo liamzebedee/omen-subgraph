@@ -10,7 +10,7 @@ module.exports = function(callback) {
         [4]: 'rinkeby',
         [77]: 'poa-sokol',
         [100]: 'xdai',
-      }[chainId] || 'development',
+      }[chainId] || 'mainnet',
       nuancedBinaryTemplateId: {
         [1]: 6,
       }[chainId] || 5,
