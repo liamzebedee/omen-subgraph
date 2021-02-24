@@ -8,6 +8,7 @@
     "create-local": "graph create --node http://localhost:8020/ protofire/omen",
     "remove-local": "graph remove --node http://localhost:8020/ protofire/omen",
     "deploy-local": "graph deploy --node http://localhost:8020/ --ipfs http://localhost:5001 protofire/omen",
+    "refresh-local": "graph remove protofire/omen --node http://127.0.0.1:8020 && yarn create-local && yarn deploy-local",
     "deploy:rinkeby": "graph deploy --node https://api.thegraph.com/deploy/ --ipfs https://api.thegraph.com/ipfs/ protofire/omen-rinkeby",
     "deploy:mainnet": "graph deploy --node https://api.thegraph.com/deploy/ --ipfs https://api.thegraph.com/ipfs/ protofire/omen",
     "deploy:sokol": "graph deploy --node https://api.thegraph.com/deploy/ --ipfs https://api.thegraph.com/ipfs/ protofire/omen-sokol",
